@@ -1,0 +1,58 @@
+/*CSS reset to prevent default values*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #f6f6f7;
+}
+
+#overflow {
+	height: 1225px;
+}
+
+#navBar {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 6%;
+	background-color: #1a1b29;
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+.navSection {
+	float: left;
+	display: inline-block;
+	width: calc(76%/3);
+	height: 100%;
+	margin: 0% 4%;
+	color: #f6f6f7;
+}
+
+.navSection:hover {
+	cursor: pointer;
+	color: #457d43;
+	background-color: #212233;
+}
+
+.navSection p {
+	line-height: 300%;
+	text-align: center;
+	width: 100%;
+}
+
+.logo {
+	line-height: 300%;
+	height: 100%;
+	display: block;
+	margin: auto;
+}
