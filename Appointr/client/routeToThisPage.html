@@ -1,0 +1,42 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<title>Appointr</title>
+</head>
+
+<body>
+	<p>Page 2<p>
+	{{> nav}}
+
+	<div class="modal">
+		<div class="accountModal">
+			<div class="login">
+				<p class="header">Log In</p>
+				<input type="text" placeholder="Username" class="account">
+				<input type="text" placeholder="Password" class="account">
+			</div>
+			
+			<div class="verticalLine"></div>
+			<div class="modalClose">close</div>
+			
+			<div class="signup">
+				<p class="header">Sign Up</p>
+				<input type="text" placeholder="First Name" class="account">
+				<input type="text" placeholder="Last Name" class="account">
+				<input type="text" placeholder="Username" class="account">
+				<input type="text" placeholder="Password" class="account">
+				<input type="text" placeholder="Confirm Password" class="account">
+			</div>
+			<button type="button" class="btnSubmit">Log In / Sign Up</button>
+		</div>
+	</div>
+</body>
+
+<template name="nav">
+
+	<div id="navBar">
+		<div class="navSection"><p>Schedules</p></div>
+		<div class="navSection"><img class="logo" src="/images/logo.png"></div>
+		<div class="navSection"><p>Login / Sign Up</p></div>
+	</div>
+
+</template>
