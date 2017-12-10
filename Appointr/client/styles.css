@@ -9,12 +9,23 @@
     background: transparent;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #1a1b29;
+}
+
 html, body {
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 	background-color: #f6f6f7;
 	background-image: url("/images/escheresque.png");
-    	background-repeat: repeat;
+    background-repeat: repeat;
+    overflow-x: hidden;
 }
 
 #overflow {
@@ -22,6 +33,7 @@ html, body {
 }
 
 #navBar {
+	font-family: 'Quicksand', sans-serif;
 	position: fixed;
 	margin: 0;
 	padding: 0;
@@ -57,4 +69,136 @@ html, body {
 	height: 100%;
 	display: block;
 	margin: auto;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: -5;
+}
+
+.modalClose {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 2%;
+	border-radius: 0px 15px 0px 0px;
+}
+
+.modalClose:hover, .btnSubmit:hover {
+	animation-name: hover;
+	animation-duration: .25s;
+	animation-fill-mode: forwards;
+	transition-timing-function: ease-out;
+}
+
+@keyframes hover {
+	to {
+		cursor: pointer;
+		background-color: #457d4e;
+		color: #1a1b29;
+	}
+}
+
+.btnSubmit {
+	border-radius: 0px 0px 15px 15px;
+	width: 100%;
+	padding: 2%;
+	color: #457d4e;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 25px;
+}
+
+.verticalLine {
+	height: 70%;
+	position: absolute;
+	outline: 1px solid #f6f6f7;
+	left: 50%;
+	top: 10%;
+}
+
+.fadeOut {
+	animation-name: fadeOut;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	transition-timing-function: ease-out;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+		background-color: rgba(0, 0, 0, .5);
+		z-index: 5;
+	}
+	to {
+		opacity: 0;
+		background-color: rgba(0, 0, 0, 0);
+		display: none;
+		z-index: -5;
+	}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	transition-timing-function: ease-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		background-color: rgba(0, 0, 0, 0);
+		z-index: -5;
+	}
+	to {
+		opacity: 1;
+		background-color: rgba(0, 0, 0, .5);
+		z-index: 5;
+	}
+}
+
+.content {
+	display: inline-table;
+	width: 80%;
+	background-color: #f6f6f7;
+	margin: 10%;
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+	border: 1px solid #1a1b29;
+	background-image: url("/images/beige-paper.png");
+    background-repeat: repeat;
+}
+
+.title {
+	width: 75%;
+	margin: 5% auto;
+	color: #262523;
+	font-size: 3.5vw;
+	text-align: center;
+	border-bottom: 1px solid #457d4e;
+	font-weight: 600;
+	margin-bottom: 5%;
+}
+
+.contentText {
+	color: #4c4a46;
+	font-size: 1.5vw;
+text-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+}
+
+.contentSection {
+	display: inline-block;
+	padding: 10% 5%;
+}
+
+.lastSection {
+	margin-bottom: 0;
+	border-radius: 0 0 15px 15px;
 }
