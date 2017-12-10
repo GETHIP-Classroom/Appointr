@@ -1,0 +1,70 @@
+
+.accountModal {
+	padding: 5%;
+	position: absolute;
+	width: 50%;
+	height: 45%;
+	top: 25%;
+	left: 25%;
+	background-color: #1a1b29;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	color: #457d4e;
+}
+
+.header {
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.login {
+	float: left;
+	width: 45%;
+}
+
+.signup {
+	float: right;
+	width: 45%;
+}
+
+.account {
+	width: 90%;
+	padding: 5%;
+	background-color: #E2E2E2;
+	margin-bottom: 5%;
+}
+
+.account:focus {
+	background-color: #FFFCF5;
+}
+
+.tutorialVid {
+	width: 50%;
+}
+
+.contentText {
+	width: 45%;
+	line-height: 150%;
+}
+
+.contentText, .tutorialVid {
+	float: left;
+}
+
+.contentText:nth-child(even) {
+	margin-left: 5%;
+}
+
+.contentText:nth-child(odd) {
+	margin-right: 5%;
+	color: #f6f6f7;
+}
+
+.contentSection:nth-child(odd) {
+	background-color: #4c4a46;
+	background-image: url("/images/beige-paper.png");
+    background-repeat: repeat;
+}
+
+
