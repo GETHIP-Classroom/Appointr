@@ -17,6 +17,11 @@
 	background-color: #1a1b29;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -26,10 +31,6 @@ html, body {
 	background-image: url("/images/escheresque.png");
     background-repeat: repeat;
     overflow-x: hidden;
-}
-
-#overflow {
-	height: 1225px;
 }
 
 #navBar {
@@ -165,7 +166,8 @@ html, body {
 }
 
 .content {
-	display: inline-table;
+	overflow: hidden;
+	display: inline-block;
 	width: 80%;
 	background-color: #f6f6f7;
 	margin: 10%;
@@ -177,7 +179,8 @@ html, body {
 }
 
 .title {
-	width: 75%;
+	white-space: nowrap;
+	width: 80%;
 	margin: 5% auto;
 	color: transparent;
 	font-size: 3.5vw;
