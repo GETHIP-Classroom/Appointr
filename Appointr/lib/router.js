@@ -1,6 +1,6 @@
 FlowRouter.route('/', {
     action: function(params, queryParams) {
-        BlazeLayout.render('layout1', {content: "indexstuff"});
+        BlazeLayout.render('layout1', {content: "index"});
     }
 });
 

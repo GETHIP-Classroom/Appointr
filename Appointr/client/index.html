@@ -8,14 +8,37 @@
 <template name="nav">
 
 	<div id="navBar">
-		<div class="navSection"><a href="/routeToThisPage"><p>Schedules</p></a></div>
-		<div class="navSection"><a href="/"><img class="logo" src="/images/logo.png"></a></div>
-		<div class="navSection"><p>Login / Sign Up</p></div>
+		<a href="/routeToThisPage" class="navSection"><p>Schedules</p></a>
+		<a href="/" class="navSection"><img class="logo" src="/images/logo.png"></a>
+		<a class="navSection"><p>Login / Sign Up</p></a>
+	</div>
+
+	<div class="modal">
+		<div class="accountModal">
+			<div class="login">
+				<p class="header">Log In</p>
+				<input type="text" placeholder="Username" class="account">
+				<input type="text" placeholder="Password" class="account">
+			</div>
+			
+			<div class="verticalLine"></div>
+			<div class="modalClose">close</div>
+			
+			<div class="signup">
+				<p class="header">Sign Up</p>
+				<input type="text" placeholder="First Name" class="account">
+				<input type="text" placeholder="Last Name" class="account">
+				<input type="text" placeholder="Username" class="account">
+				<input type="text" placeholder="Password" class="account">
+				<input type="text" placeholder="Confirm Password" class="account">
+			</div>
+			<button type="button" class="btnSubmit">Log In / Sign Up</button>
+		</div>
 	</div>
 
 </template>
 
-<template name="indexstuff">
+<template name="index">
 	<div class="content">
 		
 				<p class="title">Easy and Efficient Employee Scheduling</p>
@@ -40,29 +63,5 @@
 					<img class="tutorialVid" src="https://media.giphy.com/media/xUNd9Vw7KsPgc9dgLS/giphy.gif">
 				</div>
 		
-			</div>
-		
-			<div class="modal">
-				<div class="accountModal">
-					<div class="login">
-						<p class="header">Log In</p>
-						<input type="text" placeholder="Username" class="account">
-						<input type="text" placeholder="Password" class="account">
-					</div>
-					
-					<div class="verticalLine"></div>
-					<div class="modalClose">close</div>
-					
-					<div class="signup">
-						<p class="header">Sign Up</p>
-						<input type="text" placeholder="First Name" class="account">
-						<input type="text" placeholder="Last Name" class="account">
-						<input type="text" placeholder="Username" class="account">
-						<input type="text" placeholder="Password" class="account">
-						<input type="text" placeholder="Confirm Password" class="account">
-					</div>
-					<button type="button" class="btnSubmit">Log In / Sign Up</button>
-				</div>
-			</div>
-		
+			</div>		
 </template>

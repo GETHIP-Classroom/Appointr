@@ -1,0 +1,89 @@
+
+#schedules td {
+	text-align: center;
+	vertical-align: middle;
+	min-width: 12vw;
+	padding: 1% 0;
+}
+
+.date {
+	width: 100%;
+}
+
+.date p {
+	display: inline;
+}
+
+.leftArrow {
+	float: left;
+}
+
+.rightArrow {
+	float: right;
+}
+
+.leftArrow:hover, .rightArrow:hover {
+	color: #457d4e;
+	text-shadow: 0px 0px 50px rgb(0,0,0);
+}
+
+#schedules {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#scheduleContainer {
+	overflow-x: scroll;
+}
+
+.jobRow {
+	font-size: 1.5vw;
+	color: rgb(76, 74, 70);
+}
+
+.jobRow .addEmployee {
+	color: rgb(76, 74, 70);
+}
+
+.jobRow:nth-child(even) {
+	background-color: #1a1b29;
+	color: #f6f6f7;
+	background-image: url(images/beige-paper.png);
+    background-repeat: repeat;
+}
+
+.jobRow:nth-child(even) .addEmployee {
+	color: #f6f6f7;
+}
+
+.addEmployee {
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	font-size: 2vw;
+	border: 1px solid #457d4e;
+	border-radius: 100%;
+}
+
+.addEmployee:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.75);
+}
+
+.jobName {
+	font-weight: bold;
+	border-right: 2px solid #457d4e;
+}
+
+.scheduleTaken {
+	border-radius: 5px;
+	color: #f6f6f7;
+	font-size: 1vw;
+	background-color: #457d4e;
+	width: 100%;
+	padding: 5% 0;
+}
+
+
