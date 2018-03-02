@@ -1,13 +1,37 @@
 <template name = "schedules">
-	<div class="content">
+	<div class="modal employeeModal">
+		<div id="employeeList">
+			<ul id="employeeScrollList">
+				<li>Jared Bledsoe</li>
+				<li>Frank Davis</li>
+				<li>John Adams</li>
+				<li>Robert John</li>
+				<li>Jeffrey Lucht</li>
+				<li>Carl Henry</li>
+				<li>Eric Stephen</li>
+				<li>Karen Lynn</li>
+				<li>Lynda Peterson</li>
+				<li>Trish McWalton</li>
+				<li>Howard Taylor</li>
+				<li>Philip Earl</li>
+				<li>Jim Clifton</li>
+				<li>Jacob Thelma</li>
+				<li>Kyle Lee</li>
+				<li>Marcus Devadi</li>
+				<li>Calvin Tobia</li>
+				<li>Alvin Calvin</li>
+			</ul>
+		</div>
+	</div>
 
+	<div class="content">
 		<div class="date title">
-			<a class="leftArrow">&lt;</a>
-			<p class="dayDate">Friday, February 9</p>
-			<a class="rightArrow">&gt;</a>
+			<a id="leftArrow">&lt;</a>
+			<p class="dayDate">Saturday, March 3</p>
+			<a id="rightArrow">&gt;</a>
 		</div>
 
-		<div id="scheduleContainer">
+		<div class="scheduleContainer">
 		  <table id="schedules">
 
 		    <tr class="jobRow">
@@ -25,6 +49,7 @@
 		      <th>5pm</th>
 		      <th>6pm</th>
 		      <th>7pm</th>
+		      <th>8pm</th>
 		    </tr>
 
 		    <tr class="jobRow">
@@ -32,130 +57,551 @@
 		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
 		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
 		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		    </tr>
 
 		    <tr class="jobRow">
 		      <td class="jobName">Cashier #2</td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		      <td><div class="scheduleTaken">John Adams</div></td>
 		      <td><div class="scheduleTaken">John Adams</div></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		    </tr>
 
 		    <tr class="jobRow">
 		      <td class="jobName">Cashier #3</td>
-		      <td><div class="scheduleTaken">Barack Obama</div></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="scheduleTaken">Frank Davis</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Eric Stephen</div></td>
+		      <td><div class="scheduleTaken">Eric Stephen</div></td>
+		      <td><div class="scheduleTaken">Eric Stephen</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		    </tr>
 
 		    <tr class="jobRow">
 		      <td class="jobName">Security</td>
-		      <td><div class="scheduleTaken">Jim Collison</div></td>
-		      <td><div class="scheduleTaken">Jim Collison</div></td>
-		      <td><div class="scheduleTaken">Jim Collison</div></td>
-		      <td><div class="scheduleTaken">Jim Collison</div></td>
-		      <td><div class="scheduleTaken">Jim Collison</div></td>
-		      <td><div class="scheduleTaken">Jim Collison</div></td>
-		      <td><div class="scheduleTaken">Jim Clifton</div></td>
-		      <td><div class="scheduleTaken">Jim Clifton</div></td>
-		      <td><div class="scheduleTaken">Jim Clifton</div></td>
-		      <td><div class="scheduleTaken">Jim Clifton</div></td>
-		      <td><div class="scheduleTaken">Jim Clifton</div></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		    </tr>
 
 		    <tr class="jobRow">
 		      <td class="jobName">Supply Stocker #1</td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		    </tr>
 
 		    <tr class="jobRow">
 		      <td class="jobName">Supply Stocker #2</td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="addEmployee addJob">+</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+		  </table>
+		</div>
+
+
+
+
+
+		<div class="scheduleContainer hidden">
+			<table id="schedules">
+
+		    <tr class="jobRow">
+		      <th></th>
+		      <th>7am</th>
+		      <th>8am</th>
+		      <th>9am</th>
+		      <th>10am</th>
+		      <th>11am</th>
+		      <th>12pm</th>
+		      <th>1pm</th>
+		      <th>2pm</th>
+		      <th>3pm</th>
+		      <th>4pm</th>
+		      <th>5pm</th>
+		      <th>6pm</th>
+		      <th>7pm</th>
+		      <th>8pm</th>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Security #1</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="scheduleTaken">Jeffrey Lucht</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Security #2</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Groundskeeper</td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Eric Stephen</div></td>
+		      <td><div class="scheduleTaken">Eric Stephen</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Tech Assistance #1</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="scheduleTaken">Robert John</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">John Adams</div></td>
+		      <td><div class="scheduleTaken">John Adams</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Tech Assistance #2</td>
+		      <td><div class="scheduleTaken">Howard Taylor</div></td>
+		      <td><div class="scheduleTaken">Howard Taylor</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
+		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
+		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
+		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Hiring Representative</td>
+		      <td><div class="scheduleTaken">Trish McWalton</div></td>
+		      <td><div class="scheduleTaken">Trish McWalton</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Jim Clifton</div></td>
+		      <td><div class="scheduleTaken">Jim Clifton</div></td>
+		      <td><div class="scheduleTaken">Jim Clifton</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="addEmployee addJob">+</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+		  </table>
+		</div>
+
+
+
+
+
+		<div class="scheduleContainer hidden">
+		  <table id="schedules">
+
+		    <tr class="jobRow">
+		      <th></th>
+		      <th>7am</th>
+		      <th>8am</th>
+		      <th>9am</th>
+		      <th>10am</th>
+		      <th>11am</th>
+		      <th>12pm</th>
+		      <th>1pm</th>
+		      <th>2pm</th>
+		      <th>3pm</th>
+		      <th>4pm</th>
+		      <th>5pm</th>
+		      <th>6pm</th>
+		      <th>7pm</th>
+		      <th>8pm</th>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Hairdresser #1</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="scheduleTaken">Carl Henry</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
+		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
+		      <td><div class="scheduleTaken">Jared Bledsoe</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Hairdresser #2</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		    </tr>
 
 		    <tr class="jobRow">
 		      <td class="jobName">Greeter</td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><div class="scheduleTaken">Mike Wazowski</div></td>
-		      <td><div class="scheduleTaken">Mike Wazowski</div></td>
-		      <td><div class="scheduleTaken">Mike Wazowski</div></td>
-		      <td><div class="scheduleTaken">Mike Wazowski</div></td>
-		      <td><div class="scheduleTaken">Mike Wazowski</div></td>
-		      <td><div class="scheduleTaken">Mike Wazowski</div></td>
-		      <td><div class="scheduleTaken">Mike Wazowski</div></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
-		      <td><button class="addEmployee">+</button></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Lynda Peterson</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="scheduleTaken">Karen Lynn</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
 		    </tr>
 
+		    <tr class="jobRow">
+		      <td class="jobName">Manager</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
 
+		    <tr class="jobRow">
+		      <td class="addEmployee addJob">+</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
 		  </table>
 		</div>
 
+
+
+
+
+
+		<div class="scheduleContainer hidden">
+		  <table id="schedules">
+
+		    <tr class="jobRow">
+		      <th></th>
+		      <th>7am</th>
+		      <th>8am</th>
+		      <th>9am</th>
+		      <th>10am</th>
+		      <th>11am</th>
+		      <th>12pm</th>
+		      <th>1pm</th>
+		      <th>2pm</th>
+		      <th>3pm</th>
+		      <th>4pm</th>
+		      <th>5pm</th>
+		      <th>6pm</th>
+		      <th>7pm</th>
+		      <th>8pm</th>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Cashier #1</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Cashier #2</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Cashier #3</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Security</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Supply Stocker #1</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="jobName">Supply Stocker #2</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+
+		    <tr class="jobRow">
+		      <td class="addEmployee addJob">+</td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		      <td><div class="addEmployee">+</div></td>
+		    </tr>
+		  </table>
+		</div>
 	</div>
 </template>

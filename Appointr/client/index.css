@@ -10,6 +10,7 @@
 	border-radius: 15px;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 	color: #457d4e;
+	overflow: scroll;
 }
 
 .header {
@@ -40,7 +41,7 @@
 }
 
 .tutorialVid {
-	width: 50%;
+	width: 40%;
 }
 
 .contentText {
@@ -66,5 +67,6 @@
 	background-image: url("/images/beige-paper.png");
     background-repeat: repeat;
 }
+
 
 

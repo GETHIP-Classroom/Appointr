@@ -14,11 +14,11 @@
 	display: inline;
 }
 
-.leftArrow {
+#leftArrow {
 	float: left;
 }
 
-.rightArrow {
+#rightArrow {
 	float: right;
 }
 
@@ -33,13 +33,18 @@
     width: 100%;
 }
 
-#scheduleContainer {
+.one, .two {
+	display: none !important;
+}
+
+.scheduleContainer {
 	overflow-x: scroll;
 }
 
 .jobRow {
 	font-size: 1.5vw;
 	color: rgb(76, 74, 70);
+    background-attachment: fixed;
 }
 
 .jobRow .addEmployee {
@@ -58,16 +63,15 @@
 }
 
 .addEmployee {
-	vertical-align: middle;
 	margin: 0 auto;
 	width: 50px;
 	height: 50px;
-	font-size: 2vw;
+	font-size: 40px;
 	border: 1px solid #457d4e;
 	border-radius: 100%;
 }
 
-.addEmployee:hover {
+.addEmployee:hover, .scheduleTaken:hover {
 	cursor: pointer;
 	box-shadow: 0px 0px 30px rgba(0,0,0,.75);
 }
@@ -86,4 +90,47 @@
 	padding: 5% 0;
 }
 
+.addJob {
+	border-radius: 0;
+}
 
+#employeeList {
+	text-align: center;
+	padding: 5%;
+	position: relative;
+	width: 30%;
+	height: 45%;
+	top: 15%;
+	margin: auto;
+	background-color: #1a1b29;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	color: #457d4e;
+	overflow-y: scroll;
+	font-size: 2.5vw;
+}
+
+#employeeScrollList li {
+	list-style-type: none;
+	padding: 2% 0;
+}
+
+#employeeScrollList li:hover {
+	list-style-type: none;
+	cursor: pointer;
+	color: #457d43;
+	background-color: #212233;
+}
+
+.selectedEmployee {
+	background-color: #457d4e;
+	color: #f6f6f7;
+}
+
+.hidden {
+	display: none !important;
+}
+
+#code {
+	text-align: center;
+}

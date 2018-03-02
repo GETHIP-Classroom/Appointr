@@ -15,27 +15,52 @@
 
 	<div class="modal">
 		<div class="accountModal">
-			<div class="login">
-				<p class="header">Log In</p>
-				<input type="text" placeholder="Username" class="account">
-				<input type="text" placeholder="Password" class="account">
-			</div>
-			
-			<div class="verticalLine"></div>
 			<div class="modalClose">close</div>
-			
-			<div class="signup">
-				<p class="header">Sign Up</p>
-				<input type="text" placeholder="First Name" class="account">
-				<input type="text" placeholder="Last Name" class="account">
-				<input type="text" placeholder="Username" class="account">
-				<input type="text" placeholder="Password" class="account">
-				<input type="text" placeholder="Confirm Password" class="account">
+
+			<div class="toggleSettings">
+				<div class="verticalLine"></div>
+				<div class="login">
+					<p class="header">Log In</p>
+					<input type="text" placeholder="Username" class="account">
+					<input type="text" placeholder="Password" class="account">
+				</div>
+							
+				<div class="signup">
+					<p class="header">Sign Up</p>
+					<input type="text" placeholder="First Name" class="account">
+					<input type="text" placeholder="Last Name" class="account">
+					<input type="text" placeholder="Username" class="account">
+					<input type="password" placeholder="Password" class="account">
+					<input type="password" placeholder="Confirm Password" class="account">
+				</div>
+				<button type="button" class="btnSubmit">Log In / Sign Up</button>
 			</div>
-			<button type="button" class="btnSubmit">Log In / Sign Up</button>
+
+			<div class="toggleSettings hidden header">
+				<p id="code">Add Employees: 1A05JV4C9X</p>
+					<ul id="employeeScrollList">
+						<li>Jared Bledsoe</li>
+						<li>Frank Davis</li>
+						<li>John Adams</li>
+						<li>Robert John</li>
+						<li>Jeffrey Lucht</li>
+						<li>Carl Henry</li>
+						<li>Eric Stephen</li>
+						<li>Karen Lynn</li>
+						<li>Lynda Peterson</li>
+						<li>Trish McWalton</li>
+						<li>Howard Taylor</li>
+						<li>Philip Earl</li>
+						<li>Jim Clifton</li>
+						<li>Jacob Thelma</li>
+						<li>Kyle Lee</li>
+						<li>Marcus Devadi</li>
+						<li>Calvin Tobia</li>
+						<li>Alvin Calvin</li>
+					</ul>
+			</div>
 		</div>
 	</div>
-
 </template>
 
 <template name="index">

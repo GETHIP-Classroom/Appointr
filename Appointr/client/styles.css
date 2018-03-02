@@ -83,10 +83,12 @@ html, body {
 }
 
 .modalClose {
+	z-index: 10;
 	position: absolute;
 	top: 0;
 	right: 0;
 	padding: 2%;
+	width: 5%;
 	border-radius: 0px 15px 0px 0px;
 }
 
@@ -214,8 +216,9 @@ html, body {
 }
 
 .contentSection {
+    background-attachment: fixed;
 	display: inline-block;
-	padding: 10% 5%;
+	padding: 5%;
 }
 
 .lastSection {
