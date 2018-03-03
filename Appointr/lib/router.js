@@ -14,7 +14,6 @@ FlowRouter.route('/routeToThisPage', {
 	        	document.getElementsByClassName('toggleSettings')[0].classList.add('hidden');
 	        	document.getElementsByClassName('toggleSettings')[1].classList.remove('hidden');
 
-
 				var addEmployee = document.getElementsByClassName('addEmployee');
 				var scheduleTaken = document.getElementsByClassName('scheduleTaken');
 				var scheduleContainer = document.getElementsByClassName('scheduleContainer');
